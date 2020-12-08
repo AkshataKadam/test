@@ -1,0 +1,14 @@
+<header>
+    <nav class="navbar navbar-expand-md">
+        <div>Hello Menu!!</div>
+       
+        <ul class="navbar-nav">
+            <li><a *ngIf='HardCodedAuthService.isLogedIn()' routerLink="/welcome/aaa" class="nav-link">Home</a></li>
+            <li><a *ngIf='HardCodedAuthService.isLogedIn()' routerLink="/todos" class="nav-link">Todos</a></li>
+        
+            <li class="r"><a *ngIf='!HardCodedAuthService.isLogedIn()' routerLink="/login" class="nav-link">Login</a></li>
+            <li class="r"><a *ngIf='HardCodedAuthService.isLogedIn()' routerLink="/logout" class="nav-link">Logout</a></li>
+        </ul>
+
+    </nav>
+</header>
